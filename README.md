@@ -4,9 +4,9 @@ This project is the frontend application of the Spring_MVC fullstack application
 
 ## Technologies
 
-ReactJS 
-Ant Design
-CSS
+ReactJS\
+Ant Design\
+CSS\
 
 ## Available Scripts
 
