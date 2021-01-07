@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+# Spring_MVC Frontend with ReactJS
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the frontend application of the Spring_MVC fullstack application.
+
+## Technologies
+
+ReactJS 
+Ant Design
+CSS
 
 ## Available Scripts
 
