@@ -6,7 +6,7 @@ This project is the frontend application of the Spring_MVC fullstack application
 
 ReactJS\
 Ant Design\
-CSS\
+CSS
 
 ## Available Scripts
 
