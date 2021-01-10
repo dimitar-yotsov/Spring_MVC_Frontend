@@ -1,4 +1,4 @@
-# Spring_MVC Frontend with ReactJS
+# Spring MVC Frontend with ReactJS
 
 This project is the frontend application of the Spring_MVC fullstack application.
 
