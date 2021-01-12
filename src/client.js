@@ -21,7 +21,7 @@ const checkStatus = (response) => {
 
 /*
 
-Access all the students from the DB
+Method to access all the students from the DB
 
 */
 
@@ -30,7 +30,7 @@ export const getAllStudents = () => fetch("api/students").then(checkStatus);
 
 /*
 
-Add a new student to the DB
+Method to add a new student to the DB
 
 */
 export const addNewStudent = student =>
