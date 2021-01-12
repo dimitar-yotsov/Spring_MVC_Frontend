@@ -1,5 +1,11 @@
 import fetch from 'unfetch';
 
+/*
+
+Method to check if the response from the server contains error to handle
+
+*/
+
 const checkStatus = (response) => {
     if(response.ok) {
         return response;
@@ -13,9 +19,20 @@ const checkStatus = (response) => {
     }
 }
 
+/*
+
+Access all the students from the DB
+
+*/
 
 export const getAllStudents = () => fetch("api/students").then(checkStatus);
 
+
+/*
+
+Add a new student to the DB
+
+*/
 export const addNewStudent = student =>
     fetch("api/students", {
         headers: {
