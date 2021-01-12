@@ -3,9 +3,18 @@ import {Formik} from "formik";
 import {Input, Button, Tag} from "antd";
 import {addNewStudent} from "../client";
 
+/*
+Custom style for the form
+*/
 
 const inputBottomMargin = {marginBottom: "10px"};
 const tagStyle = {backgroundColor: "#f50", color: "white", ...inputBottomMargin};
+
+/*
+
+Student form => post student data to the backend and handling error messages from the server
+
+*/
 
 const AddStudentForm = (props) => (
             <Formik
