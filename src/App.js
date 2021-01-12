@@ -9,6 +9,11 @@ import {errorNotification} from "./Notification";
 
 import './App.css';
 
+/*
+
+Spinning icon while waiting to fetch the data
+
+*/
 
 const getIndicator = () => <LoadingOutlined style={{ fontSize: 24 }} spin />;
 
@@ -24,10 +29,20 @@ class App extends Component {
         this.fetchStudents();
     }
 
+    /*
+    
+    Working with the modal => open and close methods
+    
+    */
+
     openAddStudentModal = () => this.setState({isAddStudentModalVisible: true});
 
     closeAddStudentModal = () => this.setState({isAddStudentModalVisible: false});
 
+
+    /*
+    Fetching the data from the DB and setting the state    
+    */
 
     fetchStudents = () => {
         this.setState({isFetchig: true});
@@ -47,6 +62,12 @@ class App extends Component {
     render() {
 
         const {students, isFetching, isAddStudentModalVisible} = this.state;
+        
+        /*
+        
+        Common elements display => modal, register form and footer
+        
+        */
 
         const commonElements = () => (
             <div>
@@ -57,7 +78,7 @@ class App extends Component {
                     onCancel={this.closeAddStudentModal}
                     width={1000}
                 >
-                    <h1>Hello from modal</h1>
+                    <h1>Add new student here</h1>
                     <AddStudentForm
                         onSuccess={() => {
                             this.closeAddStudentModal();
@@ -76,6 +97,10 @@ class App extends Component {
             </div>
         );
 
+        /*
+        Show spinning icon while waiting to fetch the students
+        */
+
         if (isFetching) {
             return (
                 <Container>
@@ -83,6 +108,12 @@ class App extends Component {
                 </Container>
             );
         }
+        
+        /*
+        
+        Show the table when the students are fetched
+        
+        */
 
         if (students && students.length) {
 
@@ -140,6 +171,12 @@ class App extends Component {
 
             );
         }
+
+        /*
+        
+        Show empty page if no students found in the DB
+        
+        */
         return (<Container>
                 <Empty
                     description={
