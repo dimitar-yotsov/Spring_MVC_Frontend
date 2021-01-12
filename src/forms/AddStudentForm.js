@@ -12,7 +12,7 @@ const tagStyle = {backgroundColor: "#f50", color: "white", ...inputBottomMargin}
 
 /*
 
-Student form adds new students data to the backend
+Student form which adds a new student to the DB
 
 */
 
