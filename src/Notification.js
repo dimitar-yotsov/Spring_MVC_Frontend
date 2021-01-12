@@ -1,5 +1,11 @@
 import  {notification} from "antd";
 
+/*
+
+Notifications component which handles the pop up messages
+
+*/
+
 const openNotification = (type, message, description) => {
     notification[type]({
         message,
