@@ -3,6 +3,13 @@ import Container from "./Container";
 import {Avatar, Button} from "antd";
 import "./Footer.css";
 
+/*
+
+Footer component which displays an avatar with the number of students and a button to add a new student
+
+*/
+
+
 const Footer = (props) => (
     <div className="footer">
         <Container>
