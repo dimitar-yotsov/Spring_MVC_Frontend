@@ -53,7 +53,7 @@ class App extends Component {
                 }))
             .catch(error => {
                 const errorMessage = error.error.message;
-                const descr = "Holly cow mate smth wrong happened...";
+                const descr = "Something wrong happened...";
                 errorNotification(errorMessage, descr);
                 this.setState({isFetching: false});
             });
