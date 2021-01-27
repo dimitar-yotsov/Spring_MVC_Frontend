@@ -85,7 +85,7 @@ class App extends Component {
                             this.fetchStudents();
                         }}
                         onFailure={(err) => {
-                            console.log(JSON.stringify(err));
+                            //console.log(JSON.stringify(err));
                             errorNotification("err", "zee");
                         }}
                     />
